@@ -1,0 +1,80 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: #333;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#questionBox {
+  margin-bottom: 20px;
+}
+
+#options {
+  display: grid;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#options button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#options button:hover:not(:disabled) {
+  background: #dcdcdc;
+}
+
+.correct {
+  background: #4caf50 !important;
+  color: white;
+}
+
+.incorrect {
+  background: #f44336 !important;
+  color: white;
+}
+
+#nextBtn {
+  padding: 12px 20px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+#nextBtn:hover {
+  background: #574fd6;
+}

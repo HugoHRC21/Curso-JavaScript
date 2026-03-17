@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Generador de Contraseñas Seguras</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <div class="container">
+        <h1>🔐 Generador de Contraseñas</h1>
+
+        <div class="card">
+            <div class="output">
+                <input id="passwordOutput" type="text" readonly placeholder="Aquí aparecerá la contraseña">
+                <button id="copyBtn" title="Copiar">📋</button>
+            </div>
+
+            <div class="controls">
+                <label>
+                Longitud:
+                <input id="lengthInput" type="range" min="6" max="64" value="16">
+                <span id="lengthValue">16</span>
+                </label>
+
+                <label><input id="upperCheck" type="checkbox" checked> Incluir mayúsculas (A-Z)</label>
+                <label><input id="numbersCheck" type="checkbox" checked> Incluir números (0-9)</label>
+                <label><input id="symbolsCheck" type="checkbox" checked> Incluir símbolos (!@#$...)</label>
+
+                <div class="buttons-row">
+                <button id="generateBtn" class="primary">Generar</button>
+                <button id="saveBtn" title="Guardar en historial">💾 Guardar</button>
+                <button id="clearHistBtn" title="Limpiar historial">🗑️ Limpiar historial</button>
+                </div>
+
+                <div class="strength">
+                Fuerza: <span id="strengthText">—</span>
+                <div id="strengthBar" class="bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="history-card">
+            <h3>Historial</h3>
+            <ul id="historyList"></ul>
+        </div>
+
+        <footer>
+        <small>Proyecto modular — generator.js (lógica) · app.js (UI)</small>
+        </footer>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+    </body>
+</html>

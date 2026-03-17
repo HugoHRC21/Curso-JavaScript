@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+form {
+  margin-bottom: 20px;
+}
+
+form input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 8px 15px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #0c56c4;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+span.title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1a73e8;
+}
+
+span.year {
+  color: #777;
+  font-style: italic;
+}
+
+span.director {
+  display: block;
+  margin-top: 5px;
+  color: #444;
+}
